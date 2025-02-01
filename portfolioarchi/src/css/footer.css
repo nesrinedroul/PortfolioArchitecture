@@ -1,0 +1,124 @@
+footer {
+    background-color: #000000;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    max-width: 1200px;
+  }
+  
+  .footer-logo img {
+    width: 150px; /* Adjust as needed */
+  }
+  
+  .footer-contact form {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 60%; /* Adjust the width */
+    gap: 10px;
+  }
+  
+  .footer-contact input {
+    padding: 12px 20px; /* Similar padding to a search bar */
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    flex-grow: 1;
+    height: 40px;  /* Fixed height to make it look like a search bar */
+  }
+  
+  .footer-contact button {
+    background-color: #fed400;
+    color: #fff;
+    border: none;
+    padding: 12px 22px;
+    border-radius: 4px;
+    cursor: pointer;
+    white-space: nowrap; /* Prevents text wrapping */
+    height: 40px; /* Match the height of the input */
+    min-width: 80px;  /* Minimum width for the button */
+  }
+  
+  /* Footer info section */
+  .footer-info {
+    margin-top: 20px;
+  }
+  
+  .footer-info a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+  }
+  
+  .footer-info a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .footer-content {
+      flex-direction: column;
+      align-items: center;
+      width: 90%;
+    }
+  
+    .footer-logo img {
+      width: 120px; /* Adjust logo size for smaller screens */
+      margin-bottom: 20px;
+    }
+  
+    .footer-contact form {
+      width: 100%; /* Form should take full width on smaller screens */
+      gap: 10px;
+      margin-top: 10px;
+    }
+  
+    .footer-contact input {
+      width: 100%; /* Make the input take full width */
+      margin-bottom: 10px; /* Space between input and button */
+      height: 40px;  /* Maintain height to keep the search bar appearance */
+    }
+  
+    .footer-contact button {
+      width: 100%;  /* Make the button take full width */
+      height: 40px; /* Keep the height the same */
+      margin-top: 10px; /* Adds space between input and button */
+    }
+  
+    .footer-info p {
+      font-size: 14px;
+    }
+  
+    .footer-info a {
+      font-size: 14px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .footer-logo img {
+      width: 100px; /* Adjust logo size further on very small screens */
+    }
+  
+    .footer-contact input {
+      padding: 10px;
+      height: 40px;  /* Keep height consistent */
+    }
+  
+    .footer-contact button {
+      width: 60%;  /* Make the button take full width */
+      padding: 10px 20px;
+      height: 40px;  /* Keep height consistent */
+      margin-top: 0;
+      margin-bottom: 10px;
+    }
+  }
+  

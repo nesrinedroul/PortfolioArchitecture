@@ -1,0 +1,80 @@
+/* Why Us Section */
+.why-us {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 1200px;
+    margin: auto;
+    padding: 40px 20px;
+  }
+  
+  /* Content Section */
+  .why-us-content {
+    width: 100%;
+    max-width: 600px;
+    text-align: left; /* Align text to match the design */
+  }
+  
+  .section-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: gold;
+    margin-bottom: 20px;
+  }
+  
+  .why-us-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .why-us-item {
+    display: flex;
+    align-items: center;
+  }
+  
+  .why-us-number {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #ccc;
+    opacity: 0.5;
+    margin-right: 15px;
+  }
+  
+  .why-us-text {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: black;
+  }
+  
+  /* Image Section */
+  .why-us-image {
+    width: 100%;
+    max-width: 600px;
+  }
+  
+  .why-us-image img {
+    width: 100%;
+    height: auto;
+    transform: scaleX(-1); /* Flip Image Horizontally */
+    opacity: 0.9;
+  }
+  
+  /* Responsive Adjustments */
+  @media (min-width: 768px) {
+    .why-us {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  
+    .why-us-content {
+      width: 50%;
+      text-align: left;
+    }
+  
+    .why-us-image {
+      width: 50%;
+    }
+  }
+  

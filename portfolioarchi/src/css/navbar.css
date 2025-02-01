@@ -1,0 +1,101 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Sticky Transparent Navbar */
+  .navbar {
+    position: absolute;  /* Sticks to the top */
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(255, 255, 255, 0); /* Semi-transparent blue */
+    backdrop-filter: blur(5px); /* Blur effect */
+    padding: 15px 45px;
+    z-index: 1000; /* Ensures it stays above other elements */
+  }
+  .nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo img {
+    padding: auto;
+    margin: 10%;
+    width: 90px;
+    height: auto;
+  }
+  
+  /* Navigation Links */
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 45px;
+  }
+  
+  .nav-links li {
+   
+    display: inline;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    transition: color 0.3s;
+  }
+  
+  .nav-links a:hover {
+    color: #ffcc00;
+  }
+  
+  /* Hamburger Menu Button */
+  .menu-toggle {
+    display: none;
+    font-size: 24px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+  }
+  
+  /* Mobile Styles */
+  @media (max-width: 768px) {
+    .menu-toggle {
+      display: block;
+    }
+    .navbar {
+        position: absolute;  /* Sticks to the top */
+        top: 0;
+        left: 0;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.971); /* Semi-transparent blue */ /* Blur effect */
+        padding: 15px 20px;
+        z-index: 1000; /* Ensures it stays above other elements */
+      }
+    .nav-links {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 68px;
+      left: 0;
+      width: 100%;
+      background: rgba(0, 0, 0, 0.842); /* Darker transparent blue */
+      backdrop-filter: blur(10px);
+      text-align: center;
+      padding: 10px 0;
+    }
+  
+    .nav-links.open {
+      display: flex;
+    }
+  
+    .nav-links li {
+      margin: 5px 0;
+    }
+  }
+  
