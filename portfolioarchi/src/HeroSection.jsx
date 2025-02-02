@@ -1,10 +1,10 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
+import background from "./assets/background.png";
 
 const HeroSection = () => {
   const [isLoaded, setIsLoaded] = useState(false);
 
   useEffect(() => {
-    // Simulate content load
     setIsLoaded(true);
   }, []);
 
@@ -14,7 +14,7 @@ const HeroSection = () => {
       <div className="overlay"></div>
 
       {/* Content Section */}
-      <div className={`hero-content ${isLoaded ? 'fade-in' : ''}`}>
+      <div className={`hero-content ${isLoaded ? "fade-in" : ""}`}>
         {/* Title with Yellow Rectangle */}
         <div className="yellow-rectangle">
           <h1 className="hero-title">
@@ -23,7 +23,7 @@ const HeroSection = () => {
         </div>
 
         {/* Description and Buttons Section */}
-        <div className={`hero-description-container ${isLoaded ? 'slide-in' : ''}`}>
+        <div className={`hero-description-container ${isLoaded ? "slide-in" : ""}`}>
           {/* Description Text */}
           <div className="hero-description">
             <p className="subtext">
@@ -36,11 +36,13 @@ const HeroSection = () => {
 
           {/* Buttons */}
           <div className="hero-buttons">
-          <a href="mailto:architech.techno@gmail.com?subject=Inquiry from Portfolio&body=Hello, I have a question regarding your services.">
-        <button className="contact-btn">contacter nous</button>
-      </a>
+            <a href="mailto:architech.techno@gmail.com?subject=Inquiry from Portfolio&body=Hello, I have a question regarding your services.">
+              <button className="contact-btn">contacter nous</button>
+            </a>
             <div className="play-container">
-              <a href="#services"><button className="play-btn">▶</button></a>
+              <a href="#services">
+                <button className="play-btn">▶</button>
+              </a>
               <span>Nos Services</span>
             </div>
           </div>
@@ -53,11 +55,10 @@ const HeroSection = () => {
           position: relative;
           width: 100%;
           height: 100vh;
-          background: url("src/assets/background.png") no-repeat center center/cover;
+          background: url(${background}) no-repeat center center/cover;
           display: flex;
           align-items: center;
           justify-content: flex-start;
-          /* Keep background static */
         }
 
         .overlay {
@@ -71,6 +72,7 @@ const HeroSection = () => {
         }
 
         .hero-content {
+         margin-top:6%;
           position: relative;
           z-index: 2;
           margin-left: 10%;
@@ -86,9 +88,9 @@ const HeroSection = () => {
         }
 
         .yellow-rectangle {
-          border-top: 5px solid #E6B515;
-          border-left: 5px solid #E6B515;
-          border-bottom: 5px solid #E6B515;
+          border-top: 5px solid #e6b515;
+          border-left: 5px solid #e6b515;
+          border-bottom: 5px solid #e6b515;
           padding-left: 40px;
           padding: 50px;
           max-width: 43%;
@@ -97,7 +99,7 @@ const HeroSection = () => {
 
         .hero-title {
           font-size: 2.5rem;
-          color: #FFF;
+          color: #fff;
           -webkit-text-stroke: 1px #000;
           font-family: "Poppins", sans-serif;
           font-weight: 700;
@@ -126,27 +128,27 @@ const HeroSection = () => {
           max-width: 50%;
         }
 
-          .subtext {
+        .subtext {
           font-size: 1.2rem;
           line-height: 1.6;
-          text-align: left;        /* Align the text to the left */
-          text-justify: inter-word; /* Justify the text */
-}
-
-        
+          text-align: left;
+          text-justify: inter-word;
+        }
 
         .hero-buttons {
           display: flex;
           gap: 20px;
+          align-items: center;
+          flex-wrap: wrap;
           justify-content: flex-start;
-          margin-top: 125px;
+          margin-top: 40px;
         }
 
         .contact-btn {
           padding: 12px 36px;
           font-size: 1.1rem;
           text-transform: uppercase;
-          background: #E6B515;
+          background: #e6b515;
           color: black;
           font-weight: bold;
           border: none;
@@ -161,10 +163,9 @@ const HeroSection = () => {
         }
 
         .play-container {
-        margin-top: 20px;
           display: flex;
           align-items: center;
-          gap: 15px;
+          gap: 10px;
         }
 
         .play-btn {
@@ -185,6 +186,7 @@ const HeroSection = () => {
 
         @media (max-width: 768px) {
           .hero-content {
+          margin-top: 15%;
             margin-left: 5%;
             max-width: 90%;
           }
@@ -209,11 +211,15 @@ const HeroSection = () => {
           }
 
           .hero-buttons {
-            justify-content: center;
-            width: 100%;
-            gap: 20px;
             flex-direction: column;
-            margin-top: 20px;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            width: 100%;
+          }
+
+          .play-container {
+            justify-content: center;
           }
 
           .contact-btn {
@@ -222,8 +228,9 @@ const HeroSection = () => {
           }
 
           .play-btn {
-            width: 30px;
-            height: 30px;
+            width: 35px;
+            height: 35px;
+            font-size: 1rem;
           }
         }
 

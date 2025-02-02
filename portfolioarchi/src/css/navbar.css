@@ -27,8 +27,12 @@
     margin: 10%;
     width: 90px;
     height: auto;
+    
   }
   
+.logo{
+  color: white;
+}
   /* Navigation Links */
   .nav-links {
     list-style: none;

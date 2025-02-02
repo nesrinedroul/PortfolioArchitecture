@@ -1,10 +1,11 @@
 import "./css/WhyUs.css"; // Import the CSS file
+import archi from "./assets/whyus.png"
 const WhyUs = () => {
   return (
     <section className="why-us">
       {/* Background Image - Left Side */}
       <div className="why-us-image">
-        <img src='src/assets/whyus.png' alt="Architectural Background" />
+        <img src={archi} alt="Architectural Background" />
       </div>
 
       {/* Text Content - Right Side */}

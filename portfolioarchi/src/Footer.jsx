@@ -1,6 +1,6 @@
-import React from "react";
-import "./css/Footer.css";  // Import the CSS file
 
+import "./css/Footer.css";  // Import the CSS file
+  // Import the logo image
 const Footer = () => {
   return (
     <footer>
@@ -8,7 +8,7 @@ const Footer = () => {
       <div className="footer-content">
         {/* Logo Section */}
         <div className="footer-logo">
-          <img src="src/assets/logohammiche 1.png" alt="Your Logo" />
+         <h1>Portfolio</h1>
         </div>
 
         {/* Contact Form Section */}
@@ -27,15 +27,16 @@ const Footer = () => {
 
       {/* Essential Footer Information */}
       <div className="footer-info">
-        <p>&copy; 2025 Your Name | All Rights Reserved</p>
+        <p>&copy; 2025 bureau d'etude s'architecture | All Rights Reserved</p>
+        <h4>Email : architech.techno@gmail.com </h4>
+        <h4>Tel : 0781265209 / 0556581954 </h4>
         <p>
           <a href="mailto:architech.techno@gmail.com">Email Me</a>
         </p>
         <p>
           Follow me on
-          <a href="https://twitter.com/yourprofile" target="_blank" rel="noopener noreferrer"> Twitter</a> | 
-          <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer"> LinkedIn</a> | 
-          <a href="https://github.com/yourprofile" target="_blank" rel="noopener noreferrer"> GitHub</a>
+          <a href="https://twitter.com/yourprofile" target="_blank" rel="noopener noreferrer"> Instagram</a> | 
+          <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer"> Facebook</a> 
         </p>
       </div>
     </footer>

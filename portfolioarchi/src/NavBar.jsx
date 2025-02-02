@@ -7,9 +7,10 @@ function NavBar() {
     <nav className="navbar">
       <div className="nav-container">
         {/* Logo */}
-        <a href="#" className="logo">
-          <img className="Logo" src={logo} alt="artist" />
-        </a>
+        
+         {/* <img className="Logo" src={logo} alt="artist" />*/}
+         <h1 className="logo">Portfolio</h1>
+        
 
         {/* Hamburger Menu Button */}
         <button className="menu-toggle" onClick={() => setIsOpen(!isOpen)}>

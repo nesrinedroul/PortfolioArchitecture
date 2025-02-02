@@ -1,22 +1,26 @@
 import { useState } from "react";
 import "./css/ProjectsPagination.css";
-
+import mosque from "./assets/mosque.png";
+import centre from "./assets/projet2.png";
+import projet1 from "./pdfs/project-one.pdf"
+import projet2 from "./pdfs/project-two-one.pdf"
+import projet3 from "./pdfs/project-two-two.pdf"
 const projects = [
   {
     id: 1,
-    title: "Amenagement du mosquee ",
-    description: "This is a description about the project.",
+    title: "aménagement mosquée ",
+    description: "Ce plan détaille l’agencement du deuxième étage du bâtiment, comprenant Des bureaux optimisés pour le travail administratif et commercial. Des salles de réunion dédiées aux échanges professionnels et à la coordination. Un espace d’accueil et d’attente conçu pour recevoir les visiteurs et collaborateurs. Des sanitaires séparés pour le confort des usagers. Un espace café destiné à la détente du personnel. Des zones techniques réseau, stockage, maintenance garantissant un fonctionnement fluide des infrastructures. Un ascenseur et des issues de secours assurant accessibilité et sécurité. L’aménagement repose sur une approche ergonomique et moderne, utilisant des matériaux tels que l’acier, l’aluminium et des panneaux composites pour assurer à la fois durabilité et esthétisme.",
     date: "29-10-2020",
-    image: "src/assets/projet1.png",
-    pdf: ["src/pdfs/project-one.pdf"],
+    image: mosque,
+    pdf: projet1,
   },
   {
     id: 2,
-    title: "Amenagement Center",
-    description: "This is a brief description of Project Two.",
+    title: "aménagement Center",
+    description: "Ce plan représente la structure technique et architecturale du bâtiment, incluant l’organisation des espaces, les fondations et les éléments techniques nécessaires à la construction. Il sert de référence pour l’intégration des différents aménagements intérieurs et extérieurs, garantissant une conception solide et conforme aux normes.",
     date: "15-05-2021",
-    image: "src/assets/projet2.png",
-    pdf: ["src/pdfs/project-two-one.pdf", "src/pdfs/project-two-two.pdf"],
+    image: centre ,
+    pdf: [projet2 , projet3],
   },
 ];
 

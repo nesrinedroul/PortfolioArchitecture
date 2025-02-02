@@ -6,7 +6,7 @@ const AboutSection = () => {
   return (
     <div className="about-container" id="about">
       {/* Heading */}
-      <h2 className="about-title">QUI SOMME NOUS ?</h2>
+      <h2 className="about-title">QUI SOMMES NOUS ?</h2>
       <div className="about-content">
         {/* Image with double-frame effect */}
         <div className="image-container">
