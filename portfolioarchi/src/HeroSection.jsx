@@ -166,6 +166,7 @@ const HeroSection = () => {
           display: flex;
           align-items: center;
           gap: 10px;
+          margin-top: 5%;
         }
 
         .play-btn {
