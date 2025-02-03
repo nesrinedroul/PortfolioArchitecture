@@ -1,6 +1,4 @@
-
 import "./css/Footer.css";  // Import the CSS file
-  // Import the logo image
 const Footer = () => {
   return (
     <footer>
@@ -8,9 +6,8 @@ const Footer = () => {
       <div className="footer-content">
         {/* Logo Section */}
         <div className="footer-logo">
-         <h1>Portfolio</h1>
+         <h1>TS ARCHI DESIGN</h1>
         </div>
-
         {/* Contact Form Section */}
         <div className="footer-contact">
           <form action="mailto:architech.techno@gmail.com" method="post" enctype="text/plain">
@@ -24,7 +21,6 @@ const Footer = () => {
           </form>
         </div>
       </div>
-
       {/* Essential Footer Information */}
       <div className="footer-info">
         <p>&copy; 2025 bureau d'etude s'architecture | All Rights Reserved</p>

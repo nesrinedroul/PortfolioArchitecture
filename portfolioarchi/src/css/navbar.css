@@ -4,7 +4,6 @@
     padding: 0;
     box-sizing: border-box;
   }
-  
   /* Sticky Transparent Navbar */
   .navbar {
     position: absolute;  /* Sticks to the top */
@@ -21,15 +20,12 @@
     justify-content: space-between;
     align-items: center;
   }
-  
   .logo img {
     padding: auto;
     margin: 10%;
     width: 90px;
-    height: auto;
-    
+    height: auto; 
   }
-  
 .logo{
   color: white;
 }

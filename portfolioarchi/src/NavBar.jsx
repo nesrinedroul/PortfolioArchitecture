@@ -9,7 +9,7 @@ function NavBar() {
         {/* Logo */}
         
          {/* <img className="Logo" src={logo} alt="artist" />*/}
-         <h1 className="logo">Portfolio</h1>
+         <h1 className="logo">TS ARCHI DESIGN</h1>
         
 
         {/* Hamburger Menu Button */}
