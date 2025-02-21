@@ -3,6 +3,7 @@ import archi from "./assets/whyus.png"
 const WhyUs = () => {
   return (
     <section className="why-us">
+     
       {/* Background Image - Left Side */}
       <div className="why-us-image">
         <img src={archi} alt="Architectural Background" />

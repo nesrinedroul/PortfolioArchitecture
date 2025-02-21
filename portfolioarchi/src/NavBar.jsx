@@ -1,5 +1,4 @@
-import { useState } from "react";
-import logo from "./assets/logohammiche 1.png"; 
+import { useState } from "react"; 
 import './css/navbar.css';
 function NavBar() {
   const [isOpen, setIsOpen] = useState(false);

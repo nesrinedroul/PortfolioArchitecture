@@ -4,7 +4,7 @@ const ContactUs = () => {
   return (
     <div className="contact-container" id="contact">
       {/* Overlay */}
-      <div className="overlay"></div>
+      <div className="grid-overlay"></div>
 
       {/* Text & Button */}
       <div className="contact-content">

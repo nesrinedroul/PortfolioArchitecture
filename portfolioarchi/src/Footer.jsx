@@ -31,8 +31,9 @@ const Footer = () => {
         </p>
         <p>
           Follow me on
-          <a href="https://twitter.com/yourprofile" target="_blank" rel="noopener noreferrer"> Instagram</a> | 
-          <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer"> Facebook</a> 
+          <a href="https://www.instagram.com/ts_archidesign" target="_blank" rel="noopener noreferrer"> Instagram</a> | 
+          <a href="https://www.facebook.com/share/19i4A2z1gj/" target="_blank" rel="noopener noreferrer"> Facebook</a> |
+          <a href="https://www.tiktok.com/@archi.tech4?_t=ZM-8tirQ96O1pd&_r=1" target="_blank" rel="noopener noreferrer"> TikTok</a>
         </p>
       </div>
     </footer>

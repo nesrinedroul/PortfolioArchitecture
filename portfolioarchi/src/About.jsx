@@ -1,10 +1,9 @@
-
-
-import buildingImage from "./assets/aboutpic.jpg"; // Replace with your image path
-
+import buildingImage from "./assets/aboutpic.jpg";
+import "./css/AboutSection.css" // Replace with your image path
 const AboutSection = () => {
   return (
     <div className="about-container" id="about">
+      <div className="grid-overlay"></div>
       {/* Heading */}
       <h2 className="about-title">QUI SOMMES NOUS ?</h2>
       <div className="about-content">

@@ -1,178 +1,83 @@
-/* Activity Section */
+/* activitysection.css */
+
 .activity-section {
-    width: 100%;
-    height: 52vh;
-    background: url("../assets/activity.jpg") no-repeat center center/cover;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-  }
-  .overlay {
-    background: rgba(0, 0, 0, 0.6);
-    width: 100%;
-    padding: 40px 10%;
-    text-align: center;
-    color: white;
+
+  padding: 3rem 1rem;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
 }
-  
-  /* Title */
-  .section-title {
-    font-size: 2rem;
-    margin-bottom: 20px;
-    color: gold;
-    text-transform: uppercase;
-    font-weight: bold;
-  }
-  
-  /* ✅ Large Screens: Inline Display */
-  .activity-container.inline {
-    display: flex;
-    justify-content: space-around;
-    align-items: flex-start; /* Align items to the top */
-    gap: 20px;
-  }
-  
-  .activity-inline {
-    display: flex;
-    flex-direction: column; /* Stack icon and content vertically */
-    align-items: center; /* Center items horizontally */
-    gap: 10px;
-    text-align: center; /* Center text */
-  }
-  
-  .activity-inline .icon {
-    margin-top: 20px;
-    font-size: 2rem;
-    color: gold;
-  }
-  
-  .activity-inline .content {
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* Center content */
-  }
-  
-  /* ✅ Small Screens: Show One at a Time */
-  .activity-container.single {
-    text-align: center;
-  }
-  
-  .activity-single {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-  }
-  
-  .activity-single .icon {
-    font-size: 2.5rem;
-    color: #ffd700;
-    margin-bottom: 15px;
-  }
-  /* Pagination (Hidden by Default) */
-  .pagination {
-    display: none;
-    margin-top: 20px;
-  }
-  
-  /* Show Pagination Only on Small Screens */
-  @media (max-width: 768px) {
-    .activity-container.inline {
-      display: none;
-    }
-    .activity-container.single {
-      display: flex;
-    }
-    .activity-section {
-      height: 50vh;
-    }
-    /* Show Pagination */
-    .pagination {
-      display: flex;
-      justify-content: center;
-      gap: 20px;
-    }
-  
-    .pagination button {
-      padding: 10px 20px;
-      border: none;
-      background: gold;
-      color: black;
-      cursor: pointer;
-      font-weight: bold;
-      border-radius: 5px;
-      transition: 0.3s;
-    }
-  
-    .pagination button:hover {
-      background: white;
-      color: gold;
-    }
-  }
-  @media (max-width: 468px) {
-    .activity-container.inline {
-      display: none;
-    }
-    .activity-container.single {
-      display: flex;
-    }
-    .activity-section {
-      height: 60vh;
-    }
-    /* Show Pagination */
-    .pagination {
-      display: flex;
-      justify-content: center;
-      gap: 20px;
-    }
-  
-    .pagination button {
-      padding: 10px 20px;
-      border: none;
-      background: gold;
-      color: black;
-      cursor: pointer;
-      font-weight: bold;
-      border-radius: 5px;
-      transition: 0.3s;
-    }
-  
-    .pagination button:hover {
-      background: white;
-      color: gold;
-    }
-  }
-  @media (max-width: 368px) {
-    .activity-container.inline {
-      display: none;
-    }
-    .activity-container.single {
-      display: flex;
-    }
-    .activity-section {
-      height: 80vh;
-    }
-    /* Show Pagination */
-    .pagination {
-      display: flex;
-      justify-content: center;
-      gap: 20px;
-    }
-  
-    .pagination button {
-      padding: 10px 20px;
-      border: none;
-      background: gold;
-      color: black;
-      cursor: pointer;
-      font-weight: bold;
-      border-radius: 5px;
-      transition: 0.3s;
-    }
-  
-    .pagination button:hover {
-      background: white;
-      color: gold;
-    }
-  }
+.section-title {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 2rem;
+}
+
+.activity-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.activity-card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 1rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  padding: 2rem;
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+.activity-card .icon {
+  font-size: 2.5rem;
+  color: #ffc400;
+  margin-bottom: 1rem;
+}
+
+.activity-card .activity-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.activity-card .activity-desc {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: #666;
+}
+
+.activity-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.pagination button {
+  background: #ffd000;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  margin: 0 0.5rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.pagination button:disabled {
+  background: #ddd;
+  cursor: not-allowed;
+}
+
+.pagination button:hover:not(:disabled) {
+  background: #b39500;
+}

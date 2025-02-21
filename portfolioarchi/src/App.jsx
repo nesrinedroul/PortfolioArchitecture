@@ -9,7 +9,6 @@ import Services from './Services';
 import ContactUs from './ContactUs';
 import WhyUs from './WhyUs';
 import ProjectsPagination from './ProjectsPagination';
-import "./css/AboutSection.css";
 import Footer from './Footer';
 function App() {
   return (

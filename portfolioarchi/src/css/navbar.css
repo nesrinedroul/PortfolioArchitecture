@@ -6,14 +6,15 @@
   }
   /* Sticky Transparent Navbar */
   .navbar {
-    position: absolute;  /* Sticks to the top */
+    position:fixed;  /* Sticks to the top */
     top: 0;
     left: 0;
     width: 100%;
-    background: rgba(255, 255, 255, 0); /* Semi-transparent blue */
+    background: rgba(0, 0, 0, 0.169); /* Semi-transparent blue */
     backdrop-filter: blur(5px); /* Blur effect */
     padding: 15px 45px;
     z-index: 1000; /* Ensures it stays above other elements */
+    margin-bottom: 50px;
   }
   .nav-container {
     display: flex;
