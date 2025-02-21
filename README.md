@@ -29,26 +29,8 @@ This is a modern and responsive **Architecture Portfolio** built for a client us
    npm start
    ```
 4. Open your browser and go to `http://localhost:3000` to view the portfolio.
-
-## Project Structure
-```
-architecture-portfolio/
-│── public/         # Static assets (images, favicon, etc.)
-│── src/
-│   ├── components/ # Reusable UI components (Navbar, Footer, ProjectCards, etc.)
-│   ├── pages/      # Portfolio sections (Home, Projects, About, Contact)
-│   ├── styles/     # CSS files for styling
-│   ├── App.js      # Main component
-│   ├── index.js    # Entry point
-│── package.json
-│── README.md
-```
-
 ## Deployment
-This portfolio can be easily deployed using:
-- **Vercel** (`vercel deploy`)
-- **Netlify** (`netlify deploy`)
-- **GitHub Pages** (via `gh-pages` package)
+This portfolio is deployed here : https://tsarchidesign.netlify.app/
 
 ## Customization
 - To add new projects, update the **Projects** component with the necessary details.
