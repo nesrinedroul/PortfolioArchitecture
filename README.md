@@ -31,15 +31,5 @@ This is a modern and responsive **Architecture Portfolio** built for a client us
 4. Open your browser and go to `http://localhost:3000` to view the portfolio.
 ## Deployment
 This portfolio is deployed here : https://tsarchidesign.netlify.app/
-
-## Customization
-- To add new projects, update the **Projects** component with the necessary details.
-- Modify the **CSS styles** in `src/styles/` to tweak the design.
-- Update the **Contact section** to link to the architect’s preferred communication channels.
-
-## Contact
-For any questions or collaborations, please contact **[Client Name]** via [Client Email] or visit their website at [Client Website].
-
----
 *Built with ❤️ using React.js.*
 
